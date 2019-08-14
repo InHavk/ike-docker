@@ -4,7 +4,7 @@ ENV MALLOC_CHECK_ 0
 ENV LD_LIBRARY_PATH /usr/lib
 
 RUN yum -y install openssl-devel
-RUN yum -y downgrade openssl-devel-1.0.2k-8.el7.x86_64
+#RUN yum -y downgrade openssl-devel-1.0.2k-8.el7.x86_64
 RUN yum -y install wget tar make cmake gcc gcc-c++ libedit-devel flex bison
 
 RUN cd /tmp && \
