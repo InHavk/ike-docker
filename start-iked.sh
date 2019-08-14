@@ -17,7 +17,7 @@ trap finish TERM INT
 
 SITE=$1
 USERNAME=$2
-PASSWORD=$3
+PASSWORD=$(cat /credentials/$SITE_$USERNAME)
 
 if [ ! -f /sites/$SITE ]; then
   echo "Error: /sites/$SITE does not exist."

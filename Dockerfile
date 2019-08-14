@@ -19,7 +19,7 @@ RUN cd /tmp && \
 
 RUN mv /etc/iked.conf.sample /etc/iked.conf
 
-VOLUME /sites
+VOLUME /sites /credentials
 WORKDIR /sites
 
 COPY start-iked.sh /usr/local/bin/start-iked.sh
