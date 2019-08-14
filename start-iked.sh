@@ -28,11 +28,11 @@ fi
 COMMAND="ikec -r $SITE -a"
 
 if [ ! "$USERNAME" == "" ]; then
-  COMMAND="$COMMAND -u $USERNAME"
+  COMMAND="$COMMAND -u '$USERNAME'"
 fi
 
 if [ ! "$PASSWORD" == "" ]; then
-  COMMAND="$COMMAND -p $PASSWORD"
+  COMMAND="$COMMAND -p '$PASSWORD'"
 fi
 
 iked -F &
